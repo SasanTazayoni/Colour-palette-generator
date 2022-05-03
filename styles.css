@@ -68,7 +68,7 @@ p {
     background: linear-gradient(to bottom right, var(--color-primary), 
     var(--color-secondary));
     -webkit-background-clip: text;
-    -webkit-text-fill-color-transparent;
+    -webkit-text-fill-color: transparent;
     transition: 0.4s ease-out;
 }
 
