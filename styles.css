@@ -17,6 +17,18 @@ html {
     font-size: 62.5%;
 }
 
+button, input {
+    appearance: none;
+    background: none;
+    border: none;
+    color: inherit;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
 body {
     background: var(--color-light);
 }
@@ -49,6 +61,21 @@ p {
     margin-bottom: 3rem;
 }
 
+.generator-button {
+    color: var(--color-primary);
+    font-size: inherit;
+    font-weight: 700;
+    background: linear-gradient(to bottom right, var(--color-primary), 
+    var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color-transparent;
+    transition: 0.4s ease-out;
+}
+
+.generator-button:hover {
+    padding: 0 1rem;
+}
+
 .colours {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -56,15 +83,20 @@ p {
 }
 
 .colour {
-    display: flex;
     align-items: center;
+    background-color:var(--color-dark);
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    color: #fff;
+    display: flex;
+    font-size: 1.5rem;
     justify-content: space-between;
     padding: 1rem 1.5rem;
-    border-radius: 1rem;
-    color: #fff;
-    background-color:var(--color-dark);
     transition: 0.4s ease-out;
-    border: 2px solid transparent;
+}
+
+.colour.copied {
+    border-color: red;
 }
 
 @media (min-width: 768px) {
