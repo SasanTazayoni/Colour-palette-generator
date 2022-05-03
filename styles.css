@@ -1,0 +1,28 @@
+:root {
+    --color-primary: #D81E5D;
+    --color-secondary: #8A4FFF;
+    --color-light: #eee;
+    --color-grey: #aaa;
+    --color-dark: #1e2f42;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--color-light);
+}
+
+main {
+    padding: 6rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
