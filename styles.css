@@ -113,6 +113,10 @@ p {
 }
 
 @media (min-width: 768px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    
     .colours {
         grid-template-columns: repeat(2, 1fr);
     }
