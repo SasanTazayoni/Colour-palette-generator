@@ -126,4 +126,15 @@ p {
     .colours {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .colour {
+        align-items: center;
+        flex-direction: column;
+        height: 40vh;
+        justify-content: center;
+    }
+
+    .colour-input {
+        margin: 1rem 0;
+    }
 }
