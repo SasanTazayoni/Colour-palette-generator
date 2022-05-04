@@ -81,7 +81,7 @@ for (let i = 0; i < colour_elements.length; i++) {
 
     colour.generateHex();
     colours.push(colour);
-}
+	}
 
 document.querySelector('.generator-button')
         .addEventListener ('click', () => {
@@ -92,6 +92,9 @@ document.querySelector('.generator-button')
 
 document.addEventListener('keypress', (e) => {
     if (e.code.toLowerCase() === 'space') {
-        document.querySelector('.generator-button').click();
-        }
+        for (let i = 0; i < colours.length; i++) {
+			colours[i].generateHex();
+			e.target.blur();
+			}	
+		}
 	});
