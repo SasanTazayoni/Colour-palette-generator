@@ -64,7 +64,7 @@ const colour_elements = document.querySelectorAll('.colours .colour');
 
 const colours = [];
 
-for (let i = 0; i < colour_elements.clientHeight; i++) {
+for (let i = 0; i < colour_elements.length; i++) {
     const colour_element = colour_elements[i];
 
     const input = colour_element.querySelector('.colour-input');
