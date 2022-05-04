@@ -1,4 +1,4 @@
-class colour {
+class Colour {
     constructor (hex, element) {
         this.hex = hex;
         this.element = element;
@@ -73,7 +73,7 @@ for (let i = 0; i < colour_elements.length; i++) {
 
     const hex = input.value;
 
-    const colour = new colour(hex, colour_element);
+    const colour = new Colour(hex, colour_element);
 
     input.addEventListener('input', (e) => colour.setHex(e.target.value));
     lock_toggle.addEventListener('click', () => colour.toggleLocked());
