@@ -15,12 +15,12 @@ class Colour {
         this.locked = locked;
 
         if (locked) {
-            this.element.classList.add('locked');
+            this.element.querySelector('.lock-toggle').classList.add('is-locked');
 
             this.element.querySelector('img').src = '/icons/lock-closed.svg';
 
         } else {
-            this.element.classList.remove('locked');
+            this.element.querySelector('.lock-toggle').classList.remove('is-locked');
 
             this.element.querySelector('img').src = 'icons/lock-open.svg';
         }
