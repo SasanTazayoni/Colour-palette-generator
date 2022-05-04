@@ -1,4 +1,4 @@
-class Colour {
+class colour {
     constructor (hex, element) {
         this.hex = hex;
         this.element = element;
@@ -75,7 +75,7 @@ for (let i = 0; i < colour_elements.length; i++) {
 
     const colour = new colour(hex, colour_element);
 
-    input.addEventListener('input', () => colour.setHex(e.target.value));
+    input.addEventListener('input', (e) => colour.setHex(e.target.value));
     lock_toggle.addEventListener('click', () => colour.toggleLocked());
     copy_hex.addEventListener('click', () => colour.copyToClipboard());
 
