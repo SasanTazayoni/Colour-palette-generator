@@ -91,9 +91,7 @@ document.querySelector('.generator-button')
         });
 
 document.addEventListener('keypress', (e) => {
-    if (e.composed.toLowerCase() === 'space') {
-        for (let i = 0; i < colours.length; i++) {
-            colours[i].generateHex();
+    if (e.code.toLowerCase() === 'space') {
+        document.querySelector('.generator-button').click();
         }
-    }
-})
+	});
